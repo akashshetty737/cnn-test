@@ -65,7 +65,7 @@ model.fit_generator(
     steps_per_epoch=train_samples,
     epochs=epoch,
     validation_data=validation_generator,
-    nb_val_samples=validation_samples)
+    validation_steps=validation_samples)
 
 # model.save_weights('mnistneuralnet.h5')
 model.save('new_cnn_model.h5')
